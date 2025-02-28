@@ -7,24 +7,23 @@ import { getContract } from "thirdweb";
 //import { sepolia } from "thirdweb/chains";
 //export const NETWORK = sepolia;
 export const NETWORK = {
-        // === Required information for connecting to the network === \\
-        chainId: 10143, // Chain ID of the network
-        // Array of RPC URLs to use
-        rpc: ["https://testnet-rpc.monad.xyz"],
-
-        // === Information for adding the network to your wallet (how it will appear for first time users) === \\
-        // Information about the chain's native currency (i.e. the currency that is used to pay for gas)
-        nativeCurrency: {
-          decimals: 18,
-          name: "Monad Testnet",
-          symbol: "MON",
-        },
-        shortName: "Monad Testnet", // Display value shown in the wallet UI
-        slug: "Monad Testnet", // Display value shown in the wallet UI
-        testnet: true, // Boolean indicating whether the chain is a testnet or mainnet
-        chain: "Monad Testnet", // Name of the network
-        name: "Monad Testnet", // Name of the network
-      };
+  "chainOverrides": [
+    {
+      "name": "Monad Testnet",
+      "chain": "MON",
+      "rpc": [
+        "https://testnet-rpc.monad.xyz/"
+      ],
+      "nativeCurrency": {
+        "name": "Monad",
+        "symbol": "MON",
+        "decimals": 18
+      },
+      "chainId": 10143,
+      "slug": "Monad Testnet"
+    }
+  ]
+};
 
 // 2. The address of the marketplace V3 smart contract.
 // Deploy your own: https://thirdweb.com/thirdweb.eth/MarketplaceV3
