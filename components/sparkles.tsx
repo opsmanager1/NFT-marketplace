@@ -46,49 +46,62 @@ export const SparklesCore = ({
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 
-    class Particle {
-      x: number
-      y: number
-      size: number
-      speedX: number
-      speedY: number
+  class Particle {
+  x!: number // Используем "!" для указания, что эти свойства будут инициализированы позже
+  y!: number
+  size!: number
+  speedX!: number
+  speedY!: number
 
-      constructor() {
-        this.x = Math.random() * canvas.width
-        this.y = Math.random() * canvas.height
-        this.size = Math.random() * (maxSize - minSize) + minSize
-        this.speedX = Math.random() * 0.5 - 0.25
-        this.speedY = Math.random() * 0.5 - 0.25
-      }
+  constructor() {
+    const canvas = canvasRef.current
+    if (!canvas) return // Если canvas не существует, выходим из конструктора
 
-      update() {
-        this.x += this.speedX
-        this.y += this.speedY
+    this.x = Math.random() * canvas.width
+    this.y = Math.random() * canvas.height
+    this.size = Math.random() * (maxSize - minSize) + minSize
+    this.speedX = Math.random() * 0.5 - 0.25
+    this.speedY = Math.random() * 0.5 - 0.25
+  }
 
-        if (this.x > canvas.width) this.x = 0
-        if (this.x < 0) this.x = canvas.width
-        if (this.y > canvas.height) this.y = 0
-        if (this.y < 0) this.y = canvas.height
+  update() {
+    const canvas = canvasRef.current
+    if (!canvas) return // Проверка на null для canvas
 
-        // Mouse interaction
-        const dx = mousePosition.x - this.x
-        const dy = mousePosition.y - this.y
-        const distance = Math.sqrt(dx * dx + dy * dy)
-        if (distance < 100) {
-          const angle = Math.atan2(dy, dx)
-          this.x -= Math.cos(angle) * 1
-          this.y -= Math.sin(angle) * 1
-        }
-      }
+    this.x += this.speedX
+    this.y += this.speedY
 
-      draw() {
-        if (!ctx) return
-        ctx.fillStyle = particleColor
-        ctx.beginPath()
-        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
-        ctx.fill()
-      }
+    if (this.x > canvas.width) this.x = 0
+    if (this.x < 0) this.x = canvas.width
+    if (this.y > canvas.height) this.y = 0
+    if (this.y < 0) this.y = canvas.height
+
+    // Mouse interaction
+    const dx = mousePosition.x - this.x
+    const dy = mousePosition.y - this.y
+    const distance = Math.sqrt(dx * dx + dy * dy)
+    if (distance < 100) {
+      const angle = Math.atan2(dy, dx)
+      this.x -= Math.cos(angle) * 1
+      this.y -= Math.sin(angle) * 1
     }
+  }
+
+  draw() {
+    const canvas = canvasRef.current
+    if (!canvas) return // Проверка на null для canvas
+
+    const ctx = canvas.getContext("2d")
+    if (!ctx) return // Если контекст не получен, выходим
+
+    ctx.fillStyle = particleColor
+    ctx.beginPath()
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2)
+    ctx.fill()
+  }
+}
+
+
 
     const init = () => {
       particles = []
