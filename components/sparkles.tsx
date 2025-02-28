@@ -24,8 +24,8 @@ class Particle {
     this.x = Math.random() * canvas.width
     this.y = Math.random() * canvas.height
     this.size = Math.random() * (maxSize - minSize) + minSize
-    this.speedX = Math.random() * 0.5 - 0.25
-    this.speedY = Math.random() * 0.5 - 0.25
+    this.speedX = Math.random() * 0.1 - 0.05 // Уменьшена скорость частиц
+    this.speedY = Math.random() * 0.1 - 0.05 // Уменьшена скорость частиц
   }
 
   update(mousePosition: { x: number; y: number }, canvas: HTMLCanvasElement) {
@@ -83,6 +83,15 @@ export const SparklesCore = ({
     const ctx = canvas.getContext("2d")
     if (!ctx) return
 
+    // Увеличение разрешения канваса для улучшения качества
+    canvas.width = window.innerWidth * 2 // Увеличиваем разрешение
+    canvas.height = window.innerHeight * 2
+    canvas.style.width = `${window.innerWidth}px`
+    canvas.style.height = `${window.innerHeight}px`
+
+    ctx.imageSmoothingEnabled = true // Включаем сглаживание
+    ctx.imageSmoothingQuality = "high" // Устанавливаем качество сглаживания на высокий уровень
+
     let particles: Particle[] = []
     let animationFrameId: number
 
@@ -111,8 +120,11 @@ export const SparklesCore = ({
     const handleResize = () => {
       if (typeof window === "undefined") return
 
-      canvas.width = window.innerWidth
-      canvas.height = window.innerHeight
+      // Обновляем разрешение при изменении размера окна
+      canvas.width = window.innerWidth * 2
+      canvas.height = window.innerHeight * 2
+      canvas.style.width = `${window.innerWidth}px`
+      canvas.style.height = `${window.innerHeight}px`
       setDimensions({
         width: window.innerWidth,
         height: window.innerHeight,
