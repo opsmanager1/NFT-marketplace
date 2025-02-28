@@ -9,6 +9,19 @@ body {
 	font-family: Inter, Helvetica, Arial, sans-serif;
 }
 
+canvas {
+  display: block;
+  position: absolute;  /* Обеспечивает фиксированное положение канваса */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Площадь по ширине окна */
+  height: 100vh; /* Площадь по высоте окна */
+}
+
+canvas#tsparticles {
+  background-color: transparent;
+}
+
 * {
 	box-sizing: border-box;
 }
