@@ -64,6 +64,7 @@ const buttonVariants = cva(
 
 )
 
+Button.displayName = "Button"; 
 
 export interface ButtonProps
 
