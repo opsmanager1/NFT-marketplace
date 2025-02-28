@@ -25,7 +25,7 @@ export default function RootLayout({
   background="transparent"
   minSize={0.5}  // уменьшено
   maxSize={1.4}  // уменьшено
-  particleDensity={50}  // уменьшено
+  particleDensity={100}  // уменьшено
   className="w-full h-full"
   particleColor="#FFFFFF"
          />
