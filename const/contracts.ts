@@ -24,9 +24,7 @@ export const NETWORK = {
         testnet: true, // Boolean indicating whether the chain is a testnet or mainnet
         chain: "Monad Testnet", // Name of the network
         name: "Monad Testnet", // Name of the network
-      }, {
-    secretKey: process.env.TW_SECRET_KEY,
-  };
+      };
 
 // 2. The address of the marketplace V3 smart contract.
 // Deploy your own: https://thirdweb.com/thirdweb.eth/MarketplaceV3
