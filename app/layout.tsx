@@ -23,8 +23,8 @@ export default function RootLayout({
         <SparklesCore
   id="tsparticlesfullpage"
   background="transparent"
-  minSize={0.5}  // уменьшено
-  maxSize={1.4}  // уменьшено
+  minSize={1.7}  // уменьшено
+  maxSize={2.8}  // уменьшено
   particleDensity={100}  // уменьшено
   className="w-full h-full"
   particleColor="#FFFFFF"
