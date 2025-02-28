@@ -11,6 +11,12 @@ export const NETWORK = defineChain({
     symbol: "MON",
     decimals: 18,
   },
+   icon: {
+    url: "https://www.bee.com/wp-content/uploads/2024/04/13a3ad5d-7a4d-4fa5-bb36-ca295b698b1b.jpeg",
+    width: 32,
+    height: 32,
+    format: "png",
+  },
 });
 
 // 2. Адрес смарт-контракта Marketplace V3
