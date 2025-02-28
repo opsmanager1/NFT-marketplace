@@ -11,12 +11,14 @@ body {
 
 canvas {
   display: block;
-  position: absolute;  /* Обеспечивает фиксированное положение канваса */
+  position: fixed; /* Это фиксированное положение */
   top: 0;
   left: 0;
-  width: 100vw; /* Площадь по ширине окна */
-  height: 100vh; /* Площадь по высоте окна */
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Чтобы канвас был под другими элементами */
 }
+
 
 canvas#tsparticles {
   background-color: transparent;
