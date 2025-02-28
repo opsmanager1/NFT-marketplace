@@ -20,15 +20,15 @@ export default function RootLayout({
       <body className="relative overflow-x-hidden max-w-screen">
         {/* Ambient background with moving particles */}
         <div className="h-full w-full absolute inset-0 z-0">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="#FFFFFF"
-          />
+        <SparklesCore
+  id="tsparticlesfullpage"
+  background="transparent"
+  minSize={0.2}  // уменьшено
+  maxSize={0.5}  // уменьшено
+  particleDensity={50}  // уменьшено
+  className="w-full h-full"
+  particleColor="#FFFFFF"
+         />
         </div>
 
         <div className="relative z-10">
