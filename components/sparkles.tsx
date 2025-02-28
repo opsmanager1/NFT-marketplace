@@ -24,8 +24,9 @@ class Particle {
     this.x = Math.random() * canvas.width
     this.y = Math.random() * canvas.height
     this.size = Math.random() * (maxSize - minSize) + minSize
-    this.speedX = Math.random() * 0.1 - 0.05 // Уменьшена скорость частиц
-    this.speedY = Math.random() * 0.1 - 0.05 // Уменьшена скорость частиц
+    this.speedX = Math.random() * 0.5 - 0.25
+    this.speedY = Math.random() * 0.5 - 0.25 
+
   }
 
   update(mousePosition: { x: number; y: number }, canvas: HTMLCanvasElement) {
