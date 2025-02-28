@@ -20,7 +20,7 @@ export const NETWORK = defineChain({
 });
 
 // 2. Адрес смарт-контракта Marketplace V3
-const MARKETPLACE_ADDRESS = "0x38ab4489E479c9266471bbe8C3794CB30EA11F20";
+const MARKETPLACE_ADDRESS = "0xAafEC4F19dCdeBF038d1CD6C581e2047CcAC93cF";
 export const MARKETPLACE = getContract({
   address: MARKETPLACE_ADDRESS,
   client,
