@@ -3,9 +3,9 @@ import { getContract, defineChain } from "thirdweb";
 
 // 1. Определяем сеть Monad Testnet
 export const NETWORK = defineChain({
-  id: 10143, // chainId из вашей конфигурации
+  id: 10143, 
   name: "Monad Testnet",
-  rpc: "https://testnet-rpc.monad.xyz/", // одна строка, а не массив
+  rpc: "https://testnet-rpc.monad.xyz/", 
   nativeCurrency: {
     name: "Monad",
     symbol: "MON",
