@@ -1,7 +1,7 @@
 import { ThirdwebProvider } from "thirdweb/react";
 import { Toaster } from "react-hot-toast";
 import { Navbar } from "@/components/Navbar";
-import { SparklesCore } from "@/components/Sparkles";
+import { SparklesCore } from "@/components/sparkles";
 import "@/globals.css";
 import { Metadata } from "next";
 
