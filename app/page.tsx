@@ -41,13 +41,13 @@ const Home: NextPage = () => {
         <div className="flex justify-center text-lg font-medium items-center mt-12 gap-4">
           <Link
             className="w-56 p-3 rounded-lg transition-all hover:shadow-lg gradient border-white/10 border"
-            href="https://portal.thirdweb.com/"
+            href="https://bitnodes.xyz/"
           >
 						Get Started
           </Link>
           <Link
             className="w-56 p-3 rounded-lg bg-white/[.04] transition-all hover:bg-white/[.06] border-white/10 border"
-            href="https://github.com/thirdweb-example/marketplace-v3"
+            href="https://github.com/opsmanager1"
             target="_blank"
           >
 						GitHub
