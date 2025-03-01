@@ -40,6 +40,7 @@ export function Navbar() {
                         hover:scale-105 shadow-md hover:shadow-lg"
             >
               Sell
+            </Link>
             <Link
               href="https://docs.monad.xyz/"
               target="_blank"
