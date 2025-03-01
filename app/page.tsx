@@ -36,7 +36,6 @@ const Home: NextPage = () => {
 						Monad
           </Link>{" "}
 					Your Unique World of Digital Treasures! <b>NFT</b>,{" "}
-          <i>not months</i>.
         </p>
 
         <div className="flex justify-center text-lg font-medium items-center mt-12 gap-4">
