@@ -35,8 +35,7 @@ const Home: NextPage = () => {
           >
 						Monad
           </Link>{" "}
-					gives you the tools you need to create audited, performant,
-					and flexible NFT marketplaces in <b>hours</b>,{" "}
+					Your Unique World of Digital Treasures! <b>NFT</b>,{" "}
           <i>not months</i>.
         </p>
 
