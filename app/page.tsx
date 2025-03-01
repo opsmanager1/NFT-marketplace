@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             className="w-56 p-3 rounded-lg transition-all hover:shadow-lg gradient border-white/10 border"
             href="https://bitnodes.xyz/"
           >
-						Get Started
+						BITNODES PORTAL
           </Link>
           <Link
             className="w-56 p-3 rounded-lg bg-white/[.04] transition-all hover:bg-white/[.06] border-white/10 border"
