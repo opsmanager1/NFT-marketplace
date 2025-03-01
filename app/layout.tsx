@@ -42,7 +42,7 @@ export default function RootLayout({
         </div>
 
         {/* Footer */}
-        <footer className="relative z-10 w-full bg-gray-900 text-white py-4">
+         <footer className="relative z-10 w-full bg-transparent bg-opacity-80 py-4">
           <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
             <p>&copy; 2025 BITNODES Marketplace. All rights reserved.</p>
             <div className="space-x-4">
