@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 						First Monad Memes NFT Marketplaces
           </span>
           <br />
-					faster than ever.
+					Easy to trade
         </h1>
         <p className="text-white/60 text-lg max-w-xl mx-auto">
           <Link
