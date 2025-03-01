@@ -68,9 +68,6 @@ export default async function TokenPage({
             height="100%" // Масштабируем изображение
             width="100%"
             className="rounded-lg !w-full bg-white/[.04]"
-            onError={(e) =>
-              console.log("MediaRenderer error:", imageUrl, e.message)
-            }
           />
         ) : (
           <p className="text-white/60">Image not available</p>
