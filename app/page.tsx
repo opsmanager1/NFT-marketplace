@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       <div className="px-8 mx-auto text-center">
         <h1 className="mb-5 text-white font-bold text-6xl">
           <span className="text-transparent bg-clip-text gradient">
-						Build NFT Marketplaces
+						First Monad Memes NFT Marketplaces
           </span>
           <br />
 					faster than ever.
@@ -30,10 +30,10 @@ const Home: NextPage = () => {
         <p className="text-white/60 text-lg max-w-xl mx-auto">
           <Link
             className="hover:underline"
-            href="https://thirdweb.com"
+            href="https://www.monad.xyz/"
             target="_blank"
           >
-						thirdweb
+						Monad
           </Link>{" "}
 					gives you the tools you need to create audited, performant,
 					and flexible NFT marketplaces in <b>hours</b>,{" "}
