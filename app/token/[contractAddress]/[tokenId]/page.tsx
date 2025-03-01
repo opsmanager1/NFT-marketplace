@@ -55,11 +55,11 @@ export default async function TokenPage({
 	return (
 		<div className="flex flex-col max-w-2xl gap-16 mx-auto mt-32 lg:max-w-full lg:flex-row">
 			<div className="flex flex-col flex-1">
-				<MediaRenderer
-					src={nft.metadata.image}
-					client={client}
-					className="rounded-lg !w-full bg-white/[.04]"
-				/>
+				 <MediaRenderer
+                                    src={contractMetadata.image}
+                                    height="32px"
+                                    width="32px"
+                                />
 				<div className="flex items-center justify-between my-4">
 					<div>
 						<h1 className="mx-4 text-3xl font-semibold break-words hyphens-auto">
