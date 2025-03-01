@@ -55,7 +55,7 @@ export default async function TokenPage({
 
   // Логируем исходные метаданные для отладки
   console.log("Raw NFT Image:", nft.metadata.image);
-  const imageUrl = resolveIPFS(nft.metadata.image); // Используем resolveIPFS
+  const imageUrl = resolveIPFS(nft.metadata.image); // Используем новый resolveIPFS
   console.log("Resolved Image URL:", imageUrl);
 
   return (
