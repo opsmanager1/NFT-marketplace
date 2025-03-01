@@ -47,10 +47,10 @@ export function Navbar() {
                         hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300 transform 
                         hover:scale-105 shadow-md hover:shadow-lg"
             >
-              Monad
+              Monad Docks
             </Link>
             <Link
-              href="https://docs.monad.xyz"
+              href="https://docs.monad.xyz/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white 
@@ -60,7 +60,7 @@ export function Navbar() {
               Docs
             </Link>
             <Link
-              href="https://faucet.monad.xyz"
+              href="https://testnet.monad.xyz/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white 
