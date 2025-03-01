@@ -53,7 +53,8 @@ export default async function TokenPage({
       a.tokenId === BigInt(params.tokenId)
   );
 
-  const imageUrl = resolveIPFS(nft.metadata.image); // Обработка IPFS-ссылки
+  // Проверяем наличие nft.metadata.image и обрабатываем через resolveIPFS
+  const imageUrl = nft.metadata.image ? resolveIPFS(nft.metadata.image) : null;
 
   return (
     <div className="flex flex-col max-w-2xl gap-16 mx-auto mt-32 lg:max-w-full lg:flex-row">
