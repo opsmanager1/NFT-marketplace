@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <div className="flex justify-center p-2">
         <Image
           src="/hero-asset.png"
-          width={240}
+          width={340}
           height={340}
           alt="Hero asset, NFT marketplace"
           quality={100}
