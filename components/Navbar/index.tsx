@@ -27,16 +27,16 @@ export function Navbar() {
           <div className="flex items-center gap-6 font-medium">
             <Link
               href="/buy"
-              className="px-6 py-2 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 text-white 
-                        hover:from-green-600 hover:to-emerald-600 transition-all duration-300 transform 
+              className="px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white 
+                        hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300 transform 
                         hover:scale-105 shadow-md hover:shadow-lg"
             >
               Buy
             </Link>
             <Link
               href="/sell"
-              className="px-6 py-2 rounded-full bg-gradient-to-r from-red-500 to-rose-500 text-white 
-                        hover:from-red-600 hover:to-rose-600 transition-all duration-300 transform 
+              className="px-6 py-2 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white 
+                        hover:from-indigo-600 hover:via-purple-600 hover:to-pink-600 transition-all duration-300 transform 
                         hover:scale-105 shadow-md hover:shadow-lg"
             >
               Sell
