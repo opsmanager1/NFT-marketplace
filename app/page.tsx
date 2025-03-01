@@ -13,7 +13,7 @@ const Home: NextPage = () => {
         <Image
           src="/hero-asset.png"
           width={240}
-          height={240}
+          height={340}
           alt="Hero asset, NFT marketplace"
           quality={100}
           className="max-w-screen mb-4"
