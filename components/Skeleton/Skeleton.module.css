@@ -3,7 +3,7 @@
 	background: linear-gradient(to right, #333 0%, #555 50%, #333 100%);
 	background-size: 400% 400%;
 	animation: pulse 1s ease-in-out infinite;
-	min-height: 12px;
+	min-height: 10px;
 	max-height: 100%;
 }
 
