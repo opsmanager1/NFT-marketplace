@@ -53,9 +53,9 @@ export default async function TokenPage({
       a.tokenId === BigInt(params.tokenId)
   );
 
-  // Логируем исходные метаданные для отладки
+
   console.log("Raw NFT Image:", nft.metadata.image);
-  const imageUrl = resolveIPFS(nft.metadata.image); // Используем новый resolveIPFS
+  const imageUrl = resolveIPFS(nft.metadata.image); 
   console.log("Resolved Image URL:", imageUrl);
 
   return (
@@ -65,7 +65,7 @@ export default async function TokenPage({
           <MediaRenderer
             src={imageUrl}
             client={client}
-            height="100%" // Масштабируем изображение
+            height="100%"
             width="100%"
             className="rounded-lg !w-full bg-white/[.04]"
           />
