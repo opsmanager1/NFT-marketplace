@@ -55,7 +55,7 @@ export default async function TokenPage({
 
   // Логируем исходные метаданные для отладки
   console.log("Raw NFT Image:", nft.metadata.image);
-  const imageUrl = resolveIPFS(nft.metadata.image);
+  const imageUrl = resolveIPFS(nft.metadata.image); // Автоматическая обработка URL
   console.log("Resolved Image URL:", imageUrl);
 
   return (
@@ -65,7 +65,7 @@ export default async function TokenPage({
           <MediaRenderer
             src={imageUrl}
             client={client}
-            height="100%"
+            height="100%" // Масштабируем изображение
             width="100%"
             className="rounded-lg !w-full bg-white/[.04]"
             onError={(e) =>
@@ -84,6 +84,7 @@ export default async function TokenPage({
               #{nft.id.toString()}
             </p>
           </div>
+
           <div className="flex items-center gap-4 transition-all cursor-pointer hover:opacity-80">
             <div
               className="w-12 h-12 overflow-hidden border-2 rounded-full opacity-90 border-white/20"
@@ -110,6 +111,7 @@ export default async function TokenPage({
 
       <div className="flex-shrink sticky w-full min-w-[370px] lg:max-w-[450px]">
         <div className="relative flex flex-col w-full mb-6 overflow-hidden bg-transparent rounded-lg grow">
+          {/* Pricing information */}
           <div className="p-4 rounded-lg w-full bg-white/[.04]">
             <p className="mb-1 text-white/60">Price</p>
             <div className="text-lg font-medium rounded-md text-white/90">
@@ -132,7 +134,9 @@ export default async function TokenPage({
                 <>
                   <p
                     className="mb-4 text-white/60"
-                    style={{ marginTop: 12 }}
+                    style={{
+                      marginTop: 12,
+                    }}
                   >
                     Bids starting from
                   </p>
