@@ -28,7 +28,7 @@ export const MARKETPLACE = getContract({
 });
 
 // 3. Адрес смарт-контракта NFT-коллекции
-const NFT_COLLECTION_ADDRESS = "0xE5bd08416eAB2aa7Eff0a7fE7108cFbEB28E44af";
+const NFT_COLLECTION_ADDRESS = "0x2E5dA5Fa444d5417423AF3593186AC0D9aa334bC";
 export const NFT_COLLECTION = getContract({
   address: NFT_COLLECTION_ADDRESS,
   client,
